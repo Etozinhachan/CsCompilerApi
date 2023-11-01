@@ -2,7 +2,7 @@
 
  ## How to use the API
 
-#### you'll need to send a request to the API sending a json with the header "Content-Type: application/json" and up to this point there is only 1 endpoint, it being a POST method, the json needs 2 members, "code" and "input", here's an example:
+#### you'll need to send a request to the API by sending a json with the header "Content-Type: application/json" and up to this point there is only 1 endpoint, it being a POST method, the json needs 2 members, "code" and "input", here's an example:
 
 (( you'll need Newtonsoft.Json package from NuGet to use this example code in .net 6.0 ))
 
