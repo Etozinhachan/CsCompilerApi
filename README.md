@@ -2,8 +2,9 @@
 
  ## How to use the API
 
- [API UI URL ( testing purposes )](https://apitest320231101145700.azurewebsites.net/index.html)
- [API Endpoint URL](https://apitest320231101145700.azurewebsites.net/api/Test/CompileCode)
+[API UI URL ( testing purposes )](https://apitest320231101145700.azurewebsites.net/index.html)
+
+[API Endpoint URL](https://apitest320231101145700.azurewebsites.net/api/Test/CompileCode)
 
  you'll need to send a request to the API by sending a json with the header "Content-Type: application/json" and up to this point there is only 1 endpoint, it being a POST method.
 
