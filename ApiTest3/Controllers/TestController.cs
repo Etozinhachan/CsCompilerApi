@@ -61,7 +61,7 @@ namespace ApiTest3.Controllers
                 // Handle compilation errors
                 foreach (var diagnostic in emitResult.Diagnostics)
                 {
-                    Console.WriteLine(diagnostic);
+                    //Console.WriteLine(diagnostic);
                     error += diagnostic + "\n";
                 }
             }

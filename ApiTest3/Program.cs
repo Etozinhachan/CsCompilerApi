@@ -16,7 +16,11 @@ var app = builder.Build();
     app.UseSwaggerUI();
 }*/
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Csharp Compiler API V1");
+    c.RoutePrefix = string.Empty;
+});
 
 app.UseHttpsRedirection();
 
