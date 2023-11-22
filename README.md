@@ -38,7 +38,7 @@ namespace Test
         public static void Main()
         {
             // here you insert the URL
-            const string URL = "https://apitest320231101145700.azurewebsites.net/api/Test/CompileCode";
+            const string URL = "https://cscompilerapi.onrender.com/api/Test/CompileCode";
             WebRequest request = WebRequest.Create(URL);
             
             // here its the Http Method we'll use ( in this case, POST )
