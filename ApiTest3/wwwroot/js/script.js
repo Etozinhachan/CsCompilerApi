@@ -72,6 +72,7 @@ function displayCodeNote(codeNote){
     document.querySelectorAll('.codeNote').forEach(codeNote => {
         codeNote.addEventListener('click', function () {
             //populateForm(codeNote.dataset.id)
+            displayCodeNoteInForm(codeNote);
             alert('meow');
         });
     });
