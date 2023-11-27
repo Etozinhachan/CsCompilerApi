@@ -2,7 +2,9 @@
 
  ## How to use the API
 
-[API UI URL ( testing purposes )](https://cscompilerapi.onrender.com/index.html)
+NOW THE API HAS A PROPER FRONT-END 🥳
+
+[API Front-end URL](https://cscompilerapi.onrender.com/index.html)
 
 [API Endpoint URL](https://cscompilerapi.onrender.com/api/Test/CompileCode) NOTE: this link isn't supposed to be clicked, it's only supposed to handle requests
 
