@@ -2,9 +2,9 @@
 
  ## How to use the API
 
-[API UI URL ( testing purposes )](https://apitest320231101145700.azurewebsites.net/index.html)
+[API UI URL ( testing purposes )](https://cscompilerapi.onrender.com/index.html)
 
-[API Endpoint URL](https://apitest320231101145700.azurewebsites.net/api/Test/CompileCode) NOTE: this link isn't supposed to be clicked, it's only supposed to handle requests
+[API Endpoint URL](https://cscompilerapi.onrender.com/api/Test/CompileCode) NOTE: this link isn't supposed to be clicked, it's only supposed to handle requests
 
  you'll need to send a request to the API by sending a json with the header "Content-Type: application/json" and up to this point there is only 1 endpoint, it being a POST method.
 
@@ -38,7 +38,7 @@ namespace Test
         public static void Main()
         {
             // here you insert the URL
-            const string URL = "https://apitest320231101145700.azurewebsites.net/api/Test/CompileCode";
+            const string URL = "https://cscompilerapi.onrender.com/api/Test/CompileCode";
             WebRequest request = WebRequest.Create(URL);
             
             // here its the Http Method we'll use ( in this case, POST )
