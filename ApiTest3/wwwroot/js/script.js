@@ -9,8 +9,8 @@ function clearForm(){
 }
 
 function displayCodeNoteInForm(codeNote) {
-    inputInput.value = codeNote.input;
-    codeInput.value = codeNote.code;
+    inputInput.value = codeNote.value.input;
+    codeInput.value = codeNote.value.code;
 }
 
 function getNodeById(id){
@@ -73,7 +73,6 @@ function displayCodeNote(codeNote){
         codeNote.addEventListener('click', function () {
             //populateForm(codeNote.dataset.id)
             displayCodeNoteInForm(codeNote);
-            alert('meow');
         });
     });
 }
