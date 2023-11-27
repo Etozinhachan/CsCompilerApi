@@ -6,6 +6,8 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Emit;
 using System.Reflection;
 using Microsoft.AspNetCore.Authorization.Infrastructure;
+using System.Net;
+using System.Text;
 
 namespace ApiTest3.Controllers
 {
@@ -97,6 +99,8 @@ namespace ApiTest3.Controllers
 
                 
             }
+
+            code.code = code.code.Replace(defaultCode, "");
 
             var outputCode = new OutputCode()
             {
