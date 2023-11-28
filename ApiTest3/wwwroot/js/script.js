@@ -2,7 +2,7 @@ const compileButton = document.querySelector('#btn_compile');
 const inputInput = document.querySelector('#input_input');
 const codeInput = document.querySelector('#code_input');
 const codeNotesContainer = document.querySelector('#code__container');
-const id = 0
+var id = 0
 function clearForm() {
     inputInput.value = '';
     codeInput.value = '';
