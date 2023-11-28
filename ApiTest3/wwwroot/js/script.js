@@ -9,7 +9,7 @@ function clearForm() {
 }
 
 function displayCodeNoteInForm(codeNote) {
-    print(codeNote);
+    console.log(codeNote);
     //inputInput.value = codeNote.value.input;
     //codeInput.value = codeNote.value.code;
 }
