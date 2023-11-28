@@ -10,6 +10,7 @@ function clearForm() {
 
 function displayCodeNoteInForm(codeNote) {
     console.log(codeNote);
+    console.log(codeNote.textContent)
     //inputInput.value = codeNote.value.input;
     //codeInput.value = codeNote.value.code;
 }
