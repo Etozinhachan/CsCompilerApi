@@ -102,7 +102,7 @@ namespace ApiTest3.Controllers
 
             code.code = code.code.Replace(defaultCode, "");
 
-            code.code = code.code.Remove(code.code.Length - 1);
+            code.code = code.code.Remove(code.code.LastIndexOf("}"));
 
             var outputCode = new OutputCode()
             {
