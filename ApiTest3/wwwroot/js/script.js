@@ -2,10 +2,13 @@ const compileButton = document.querySelector('#btn_compile');
 const inputInput = document.querySelector('#input_input');
 const codeInput = document.querySelector('#code_input');
 const codeNotesContainer = document.querySelector('#code__container');
+const defaultCode = codeInput.textContent;
 var id = 0
+
+
 function clearForm() {
     inputInput.value = '';
-    codeInput.value = '';
+    codeInput.value = defaultCode;
 }
 
 function displayCodeNoteInForm(codeNote) {
@@ -89,7 +92,7 @@ function displayCodeNote(codeNote) {
         codeNote.addEventListener('click', function () {
             //populateForm(codeNote.dataset.id)
             displayCodeNoteInForm(codeNote);
-            alert('WIP feature.');
+            //alert('WIP feature.');
         });
     });
 }
