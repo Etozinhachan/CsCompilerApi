@@ -10,10 +10,9 @@ function clearForm() {
 
 function displayCodeNoteInForm(codeNote) {
     console.log(codeNote);
+    const children = codeNote.children;
+    console.log(children)
     console.log(codeNote.textContent);
-    console.log(codeNote.h3.textContent);
-    console.log(codeNote.p.textContent);
-    console.log(codeNote.h4.textContent);
 }
 
 function getNodeById(id) {
