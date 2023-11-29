@@ -10,7 +10,10 @@ function clearForm() {
 
 function displayCodeNoteInForm(codeNote) {
     console.log(codeNote);
-    console.log(codeNote.textContent)
+    console.log(codeNote.textContent);
+    console.log(codeNote.h3.textContent);
+    console.log(codeNote.p.textContent);
+    console.log(codeNote.h4.textContent);
     //inputInput.value = codeNote.value.input;
     //codeInput.value = codeNote.value.code;
 }
@@ -56,9 +59,12 @@ function displayCodeNote(codeNote) {
     //depois fazer esse data-id usar o id da codeNote a aver cm aquilo la da database por js
     const codeNoteElement = `
                                 <div class="codeNote" data-id="${id}">
-                                    <h3>Input: ${codeNote.value.input}</h3>
-                                    <p>Code: ${codeNote.value.code}</p>
-                                    <h4>Output: ${codeNote.value.output}</h4>
+                                    <label for="code_input">Input:</label>
+                                    <h3 id="code_input">${codeNote.value.input}</h3>
+                                    <label for="code_code">Input:</label>
+                                    <p id="code_code">${codeNote.value.code}</p>
+                                    <label for="code_output">Input:</label>
+                                    <h4 id="code_output">${codeNote.value.output}</h4>
                                 </div>
                             `;
     id++;
