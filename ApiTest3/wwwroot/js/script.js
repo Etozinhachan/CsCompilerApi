@@ -9,10 +9,13 @@ function clearForm() {
 }
 
 function displayCodeNoteInForm(codeNote) {
-    console.log(codeNote);
+    console.log(`codeNote: ${codeNote}`);
+    console.log(`codeNote.textContent: ${codeNote.textContent}`);
     const children = codeNote.children;
-    console.log(children)
-    console.log(codeNote.textContent);
+    console.log('children: ' + children)
+    console.log('children[1]: ' + children[1])
+    console.log('children[1].textContent: ' + children[1].textContent)
+    
 }
 
 function getNodeById(id) {
@@ -60,7 +63,7 @@ function displayCodeNote(codeNote) {
                                     <h3 id="code_input">${codeNote.value.input}</h3>
                                     <label for="code_code">Input:</label>
                                     <p id="code_code">${codeNote.value.code}</p>
-                                    <label for="code_output">Input:</label>
+                                    <label for="code_output">Output:</label>
                                     <h4 id="code_output">${codeNote.value.output}</h4>
                                 </div>
                             `;
