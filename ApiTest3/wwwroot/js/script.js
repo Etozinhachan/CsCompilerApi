@@ -61,6 +61,7 @@ function compile(input, code) {
 
 function displayCodeNote(codeNote) {
 
+    let output = (codeNote.value.output != null && codeNote.value.output != '') ? codeNote.value.output : codeNote.value.error;
 
     let allCodeNotes = codeNotesContainer.innerHTML;
 
@@ -71,10 +72,10 @@ function displayCodeNote(codeNote) {
                                 <div class="codeNote" data-id="${id}">
                                     <label for="code_input">Input:</label>
                                     <h3 id="code_input">${codeNote.value.input}</h3>
-                                    <label for="code_code">Input:</label>
+                                    <label for="code_code">Code:</label>
                                     <p id="code_code">${codeNote.value.code}</p>
                                     <label for="code_output">Output:</label>
-                                    <h4 id="code_output">${codeNote.value.output}</h4>
+                                    <h4 id="code_output">${output}</h4>
                                 </div>
                             `;
     id++;
