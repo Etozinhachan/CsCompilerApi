@@ -15,7 +15,11 @@
         <div class="container">
             <div class="code__sidebar">
                 <input type="text" id="input_input" placeholder="Add input to compile">
-                <textarea id="code_input" placeholder="Add code to compile"></textarea>
+                <textarea id="code_input" placeholder="Add code to compile">
+                    public static void Main(string[] args){
+                        Write(args[0]);
+                    }
+                </textarea>
                 <button id="btn_compile">Compile</button>
             </div>
             <div class="code__container" id="code__container">

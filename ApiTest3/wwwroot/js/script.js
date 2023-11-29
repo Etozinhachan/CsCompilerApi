@@ -9,13 +9,20 @@ function clearForm() {
 }
 
 function displayCodeNoteInForm(codeNote) {
+    
+    const children = codeNote.children;
+    /*
     console.log(`codeNote: ${codeNote}`);
     console.log(`codeNote.textContent: ${codeNote.textContent}`);
-    const children = codeNote.children;
     console.log('children: ' + children)
     console.log('children[1]: ' + children[1])
     console.log('children[1].textContent: ' + children[1].textContent)
-    
+    */
+   const input = children[1].textContent
+   const code = children[3].textContent
+   inputInput.value = input
+   codeInput.value = code
+
 }
 
 function getNodeById(id) {
