@@ -14,8 +14,6 @@ function displayCodeNoteInForm(codeNote) {
     console.log(codeNote.h3.textContent);
     console.log(codeNote.p.textContent);
     console.log(codeNote.h4.textContent);
-    //inputInput.value = codeNote.value.input;
-    //codeInput.value = codeNote.value.code;
 }
 
 function getNodeById(id) {
