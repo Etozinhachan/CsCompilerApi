@@ -61,11 +61,7 @@ function compile(input, code) {
 
 function displayCodeNote(codeNote) {
 
-    const isMainLefting = false;
-
-    console.log(codeNote.value)
-
-    //const isMainLefting = codeNote.value.indexOf('Missing Main(string[] args) method') > -1 ? true : false
+    const isMainLefting = JSON.stringify(codeNote.value).indexOf('Missing Main(string[] args) method') > -1 ? true : false
 
     if (isMainLefting){
         alert(codeNote.value);
