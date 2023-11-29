@@ -61,6 +61,13 @@ function compile(input, code) {
 
 function displayCodeNote(codeNote) {
 
+    const isMainLefting = codeNote.value.indexOf('Missing Main(string[] args) method') > -1 ? true : false
+
+    if (isMainLefting){
+        alert(codeNote.value);
+        return;
+    }
+
     let output = (codeNote.value.output != null && codeNote.value.output != '') ? codeNote.value.output : codeNote.value.error;
 
     let allCodeNotes = codeNotesContainer.innerHTML;
