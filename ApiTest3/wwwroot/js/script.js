@@ -69,7 +69,7 @@ function displayCodeNote(codeNote) {
 
     //depois fazer esse data-id usar o id da codeNote a aver cm aquilo la da database por js
     const codeNoteElement = `
-                                <div class="codeNote" data-id="${id}">
+                                <div class="codeNote" data-id="">
                                     <label for="code_input">Input:</label>
                                     <h3 id="code_input">${codeNote.value.input}</h3>
                                     <label for="code_code">Code:</label>
@@ -78,7 +78,6 @@ function displayCodeNote(codeNote) {
                                     <h4 id="code_output">${output}</h4>
                                 </div>
                             `;
-    id++;
     if (allCodeNotes.indexOf(codeNoteElement) > -1) {
         alert("That code note already exists, try adding a code note that doesn't exist yet");
         return;
