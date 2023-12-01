@@ -38,6 +38,9 @@ namespace ApiTest3.Controllers
                     //MetadataReference.CreateFromFile(typeof(Calculator).Assembly.Location) // Add reference to the helper assembly
                 );
 
+            code.code = code.code.Replace("Console.Write", "Write");
+            code.code = code.code.Replace("Console.WriteLine", "WriteLine");
+
             string defaultMethods = "";
             foreach (string method in DefaultCode.defaultMethods)
             {
