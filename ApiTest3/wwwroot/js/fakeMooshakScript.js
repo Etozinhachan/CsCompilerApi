@@ -46,18 +46,18 @@ function test(response, expectedOutput) {
 
     console.log(`Expected output: ${expectedOutput}, Actual output ${output}`);
 
-    output = output.replace("\r\n", "");
-    expectedOutput = expectedOutput.replace("\r\n", "");
-    output = output.replace("\\r\\n", "");
-    expectedOutput = expectedOutput.replace("\\r\\n", "");
-    output = output.replace("\r", "");
-    expectedOutput = expectedOutput.replace("\r", "");
-    output = output.replace("\\r", "");
-    expectedOutput = expectedOutput.replace("\\r", "");
-    output = output.replace("\n", "");
-    expectedOutput = expectedOutput.replace("\n", "");
-    output = output.replace("\\n", "");
-    expectedOutput = expectedOutput.replace("\\n", "");
+    output = output.replaceAll("\r\n", "");
+    expectedOutput = expectedOutput.replaceAll("\r\n", "");
+    output = output.replaceAll("\\r\\n", "");
+    expectedOutput = expectedOutput.replaceAll("\\r\\n", "");
+    output = output.replaceAll("\r", "");
+    expectedOutput = expectedOutput.replaceAll("\r", "");
+    output = output.replaceAll("\\r", "");
+    expectedOutput = expectedOutput.replaceAll("\\r", "");
+    output = output.replaceAll("\n", "");
+    expectedOutput = expectedOutput.replaceAll("\n", "");
+    output = output.replaceAll("\\n", "");
+    expectedOutput = expectedOutput.replaceAll("\\n", "");
     output = output.replaceAll(" ", "");
     expectedOutput = expectedOutput.replaceAll(" ", "");
     console.log(`Expected output: ${expectedOutput}, Actual output ${output}`);
