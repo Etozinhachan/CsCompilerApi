@@ -40,10 +40,16 @@ function test(response, expectedOutput) {
 
     output = output.replace("\r\n", "");
     expectedOutput = expectedOutput.replace("\r\n", "");
+    output = output.replace("\\r\\n", "");
+    expectedOutput = expectedOutput.replace("\\r\\n", "");
     output = output.replace("\r", "");
     expectedOutput = expectedOutput.replace("\r", "");
+    output = output.replace("\\r", "");
+    expectedOutput = expectedOutput.replace("\\r", "");
     output = output.replace("\n", "");
     expectedOutput = expectedOutput.replace("\n", "");
+    output = output.replace("\\n", "");
+    expectedOutput = expectedOutput.replace("\\n", "");
     output = output.replace(" ", "");
     expectedOutput = expectedOutput.replace(" ", "");
     if (output.indexOf("error CS") > -1) {
