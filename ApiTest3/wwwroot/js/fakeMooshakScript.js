@@ -38,6 +38,8 @@ function test(response, expectedOutput) {
 
     let output = (response.value.output != null && response.value.output != '') ? response.value.output : response.value.error;
 
+    console.log(`Expected output: ${expectedOutput}, Actual output ${output}`);
+
     output = output.replace("\r\n", "");
     expectedOutput = expectedOutput.replace("\r\n", "");
     output = output.replace("\\r\\n", "");
@@ -50,8 +52,9 @@ function test(response, expectedOutput) {
     expectedOutput = expectedOutput.replace("\n", "");
     output = output.replace("\\n", "");
     expectedOutput = expectedOutput.replace("\\n", "");
-    output = output.replace(" ", "");
-    expectedOutput = expectedOutput.replace(" ", "");
+    output = output.replaceAll(" ", "");
+    expectedOutput = expectedOutput.replaceAll(" ", "");
+    console.log(`Expected output: ${expectedOutput}, Actual output ${output}`);
     if (output.indexOf("error CS") > -1) {
         alert("Programa não compilou :c");
         return;
