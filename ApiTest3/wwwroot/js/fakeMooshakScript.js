@@ -2,10 +2,11 @@
 const inputInput = document.querySelector('#input_input');
 const codeInput = document.querySelector('#code_input');
 const expectedOutputInput = document.querySelector('#expectedOutput_input')
+const defaultCode = codeInput.textContent;
 
 function clearForm() {
     inputInput.value = '';
-    codeInput.value = '';
+    codeInput.value = defaultCode;
     expectedOutputInput.value = '';
 }
 
@@ -39,6 +40,12 @@ function test(response, expectedOutput) {
 
     output = output.replace("\r\n", "");
     expectedOutput = expectedOutput.replace("\r\n", "");
+    output = output.replace("\r", "");
+    expectedOutput = expectedOutput.replace("\r", "");
+    output = output.replace("\n", "");
+    expectedOutput = expectedOutput.replace("\n", "");
+    output = output.replace(" ", "");
+    expectedOutput = expectedOutput.replace(" ", "");
     if (output.indexOf("error CS") > -1) {
         alert("Programa não compilou :c");
         return;
